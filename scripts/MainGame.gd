@@ -10,6 +10,7 @@ func _ready():
 
 func _collect_load():
 	call_deferred("_add_collect")
+	print("gitHub")
 
 func _add_collect():
 	var collect = collect_scene.instance()
