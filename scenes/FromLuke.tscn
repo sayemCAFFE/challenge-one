@@ -1,0 +1,28 @@
+[gd_scene format=2]
+
+[node name="FromLuke" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0.819608, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 38.0
+margin_top = 47.0
+margin_right = -523.0
+margin_bottom = -259.0
+color = Color( 0.0313726, 0, 1, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 531.0
+margin_top = 259.0
+margin_right = -30.0
+margin_bottom = -47.0
+color = Color( 1, 0.0235294, 0, 1 )
