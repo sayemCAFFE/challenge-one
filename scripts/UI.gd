@@ -1,6 +1,7 @@
 extends Control
 
-var my_score = 1
+var p1_score = 0
+var p2_score = 0
 var game_time = 10
 
 func _ready():
@@ -9,8 +10,8 @@ func _ready():
 	Signal.connect("change_score", self, "_change_score")
 
 func _change_score():
-	$scoreLabel.text = "Score: "+str(my_score)
-	my_score += 1
+	$P1score.text = "P1: "+str(p1_score)
+	p1_score += 1
 
 
 func _on_gameTimer_timeout():
