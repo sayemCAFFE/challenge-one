@@ -14,9 +14,14 @@ func _collect_destroy():
 
 
 func _on_collect_body_entered(body):
-	Signal.emit_signal("change_score")
-	Signal.emit_signal("collect_load")
-	queue_free()
+	if body.is_in_group("player1"):
+		Signal.emit_signal("change_score")
+		Signal.emit_signal("collect_load")
+		queue_free()
+	if body.is_in_group("player2"):
+		Signal.emit_signal("change_score2")
+		Signal.emit_signal("collect_load")
+		queue_free()
 
 func _delete_collect():
 	queue_free()
