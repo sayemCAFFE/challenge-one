@@ -17,7 +17,7 @@ func _change_score():
 
 func _change_score2():
 	p2_score += 1
-	$P2score.text = "P1: "+str(p2_score)
+	$P2score.text = "P2: "+str(p2_score)
 
 func _on_gameTimer_timeout():
 	game_time -= 1

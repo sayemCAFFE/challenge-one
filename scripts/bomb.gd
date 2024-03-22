@@ -7,9 +7,11 @@ func _ready():
 
 func _on_bomb_body_entered(body):
 	if body.is_in_group("player1"):
+		GlobalVars.scorer = "player1"
 		Signal.emit_signal("collect_destroy")
 		queue_free()
 	if body.is_in_group("player2"):
+		GlobalVars.scorer = "player2"
 		Signal.emit_signal("collect_destroy")
 		queue_free()
 

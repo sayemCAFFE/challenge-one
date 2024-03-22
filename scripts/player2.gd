@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-export var speed = 400
-
 func _ready():
 	pass
 
@@ -20,4 +18,4 @@ func _process(delta):
 	
 	direction = direction.normalized()
 	
-	move_and_slide(direction * speed)
+	move_and_slide(direction * GlobalVars.player2_speed)
